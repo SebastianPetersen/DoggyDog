@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+	<title>Anchors are awesome</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="api.js"></script> 
+</head>
+
+<body>
+	<div class='t1'>
+		<h1>Find your new best friend</h1>
+	</div>
+	<div class='t2' id='content'>
+		<div>
+			<h2>Like owner, like dog...</h2>
+			Like owner, like a dog... This saying has never been so right before.<br/>
+			So many animals are looking for homes around the world, and there are a lot of different pet adoption portals out there, that require you to answer lots of questions. So much so that some people think it can be intimidating to go the adoption way.<br/>
+			We want to change that, making a custom experience for each of the future Animal Parent.<br/>
+			We have found out that dogs look like their owners, while cats are more similar in personality and habits to their owners.<br/>
+			Just look here <a href="http://www.bbc.com/future/story/20151111-why-do-dogs-look-like-their-owners">here</a><br/>
+			We have created a system where it will take all of these findings into considerations when you are looking for a new family member and will ask the questions accordingly as well as create a more fun and interactive process.<br/>
+			The system uses machine learning to find the best match for you.<br/>
+		</div>
+		<div>
+			<h2>Question</h2>
+			How many people in the household?<br/>
+			<input type='number'><br/><br/>
+			Allergies/asthma?<br/>
+			<input type='text'><br/><br/>
+			Do you like to sleep long?<br/>
+			<input type='checkbox'><br/><br/>
+			Kids under 12<br/>
+			<input type='checkbox'><br/><br/>
+			House or Apartment<br/>
+			<select name="cars">
+  				<option value="volvo">Apartment</option>
+  				<option value="saab">House</option>
+			</select> 
+		</div>
+		<div>
+			<h2>Photo</h2>
+			<p id='uploadText'>Please upload a photo of your happy face :)</p>
+			<input id="the-file" name="file" type="file"><br/>
+			<img id='img' src='#' /><br/> 
+			<input id='btn' type='button' value='Submit'>
+		</div>
+		<div>
+			<h2>Prediction</h2>
+			<p id='predictionMessage' hidden>Your new best friend will be a:</p>
+			<p id='prediction'></p>
+			<img id='image' src='pug.jpeg' hidden height='250'>
+			<div id='description' hidden>
+				<h3>Description</h3>
+			</div>
+			<a id='readMore' href='google.com' hidden>To read about me press here!</a>
+		</div>
+		<br/>
+		<input id='otherSug' type='button' value='Other suggestions' hidden>
+		<div id='otherDog' hidden>
+			Husky<br/>
+			<img src='husky.jpg' height='250'>
+			<div id='description2'></div>
+			<a href='google.com'>To read about me press here!</a>
+		</div>
+	</div>
+</body>
+
+</html>
